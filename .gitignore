@@ -1,0 +1,14 @@
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Python caching
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Poetry build files
+dist/
+.poetry/
