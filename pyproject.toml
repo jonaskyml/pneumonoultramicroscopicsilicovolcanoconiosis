@@ -19,3 +19,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 pneu = "pneumonoultramicroscopicsilicovolcanoconiosis:cli" # entry point to the CLI
+pneumonoultramicroscopicsilicovolcanoconiosis = "pneumonoultramicroscopicsilicovolcanoconiosis:cli" # entry point to the CLI

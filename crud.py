@@ -14,10 +14,22 @@ def scan(filename: str):
     with open(filename, 'r', encoding="utf-8") as file:
         content = file.read().splitlines()
 
+    i = 1
+
     for word in content:
         if not word.strip():
             continue
 
-        length = len(word)
+        length_current = len(word)
 
-        click.echo(f"word: '{word}' | legnth: '{length}'")
+        
+
+        if length_current >= i:
+            word_longest = word
+            length_longest = length_current
+            i = length_current
+
+
+    #  click.echo(f"word: '{word_longest}' | legnth: '{length_longest}'")
+    click.echo(word_longest)
+
