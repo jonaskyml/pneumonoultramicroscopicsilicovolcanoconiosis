@@ -12,24 +12,28 @@ def scan(filename: str):
     """Scan dictionary for the longest word."""
 
     with open(filename, 'r', encoding="utf-8") as file:
-        content = file.read().splitlines()
+        i = 0
+        word_longest = ""
 
-    i = 1
+        for line in file:
+            if not line.strip():
+                continue
 
-    for word in content:
-        if not word.strip():
-            continue
+            length_current = len(line.strip())
 
-        length_current = len(word)
-
-        
-
-        if length_current >= i:
-            word_longest = word
-            length_longest = length_current
-            i = length_current
+            if length_current > i:
+                word_longest = line.strip()
+                length_longest = length_current
+                i = length_current
 
 
-    #  click.echo(f"word: '{word_longest}' | legnth: '{length_longest}'")
-    click.echo(word_longest)
+        if not word_longest.strip():
+            click.echo("The file is empty!")
+        else:
+            #  click.echo(f"word: '{word_longest}' | legnth: '{length_longest}'")
+            click.echo(word_longest)
+            click.echo(length_longest)
+
+
+
 
