@@ -32,3 +32,5 @@ def scan(filename: str):
             #  click.echo(f"word: '{word_longest}' | legnth: '{length_longest}'")
             click.echo(word_longest)
             click.echo(length_longest)
+
+

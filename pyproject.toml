@@ -11,6 +11,9 @@ dependencies = [
     "click (>=8.5.0,<9.0.0)"
 ]
 
+[tool.poetry]
+include = ["./dictionaries"]
+
 [project.scripts]
 pneu = "pneumonoultramicroscopicsilicovolcanoconiosis:cli"
 pneumonoultramicroscopicsilicovolcanoconiosis = "pneumonoultramicroscopicsilicovolcanoconiosis:cli"
