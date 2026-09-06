@@ -26,14 +26,9 @@ def scan(filename: str):
                 length_longest = length_current
                 i = length_current
 
-
         if not word_longest.strip():
             click.echo("The file is empty!")
         else:
             #  click.echo(f"word: '{word_longest}' | legnth: '{length_longest}'")
             click.echo(word_longest)
             click.echo(length_longest)
-
-
-
-
