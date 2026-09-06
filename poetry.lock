@@ -394,6 +394,18 @@ crashtest = ">=0.4.1,<0.5.0"
 rapidfuzz = ">=3.0.0,<4.0.0"
 
 [[package]]
+name = "click"
+version = "8.5.0"
+description = "Composable command line interface toolkit"
+optional = false
+python-versions = ">=3.10"
+groups = ["main"]
+files = [
+    {file = "click-8.5.0-py3-none-any.whl", hash = "sha256:255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360"},
+    {file = "click-8.5.0.tar.gz", hash = "sha256:ba0d2089de75ea0310e2dde03160e6ca10009947fb95a182f9b54021bb272e34"},
+]
+
+[[package]]
 name = "colorama"
 version = "0.4.6"
 description = "Cross-platform colored terminal text."
@@ -1440,4 +1452,4 @@ test = ["pytest"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.14"
-content-hash = "fd205fbdf8f43b9b2c3972def2715bf7e71e126d338953618da48b9861f6356d"
+content-hash = "e620a11c49f5ba579a7c7791659c651e375eba49cdbcad6c7bcea373347a0093"
